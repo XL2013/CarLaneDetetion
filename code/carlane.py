@@ -19,19 +19,31 @@ class CarlaneConfig(Config):
     """
     # Give the configuration a recognizable name
     NAME = "carlane"
+    
+    BACKBONE = "resnet50"
 
     # We use a GPU with 12GB memory, which can fit two images.
     # Adjust down if you use a smaller GPU.
     IMAGES_PER_GPU = 2
+    
+    # NUMBER OF GPUS to use
+    GPU_COUNT = 2
 
     # Number of classes (including background)
     NUM_CLASSES = 1 + 21  # Background + 21 carlane classes
 
     # Number of training steps per epoch
-    STEPS_PER_EPOCH = 100
+    STEPS_PER_EPOCH = 400
 
-    # Skip detections with < 90% confidence
-    DETECTION_MIN_CONFIDENCE = 0.9
+    # Minimum probability value to accept a detected instance
+    # ROIs below this threshold are skipped    
+    DETECTION_MIN_CONFIDENCE = 0.7
+    
+    # Non-maximum suppression threshold for detection
+    DETECTION_NMS_THRESHOLD = 0.3
+    
+    # Image mean(RGB)
+    MEAB_PIXEL = np.array([115.5, 115.9, 116.2])
 
 
 ############################################################
