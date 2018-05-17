@@ -9,16 +9,19 @@
 
 1. 图片大小统计
 
-![image](https://note.youdao.com/yws/api/personal/file/17CC202D36164664AF3E6CAB0AE16CB3?method=download&shareKey=a45bc49cd991639327815deedda264a1)
+![image](images/image_size.png)
+
 2. 图片中车道线数量统计
 
-![image](https://note.youdao.com/yws/api/personal/file/3B8AA6E55EC048B2B1DD02B2F9B103F9?method=download&shareKey=8ab1160b67e6551b4d20b808d9ff8bab)
+![image](images/Line_num.png)
+
 3. 图片中车道线bbox大小统计
 
-![imafge](https://note.youdao.com/yws/api/personal/file/275E2D1061564B4A850776360BF4CAE1?method=download&shareKey=e593d5047b6ac8af38638f902c27e7e9)
+![image](images/line_size.png)
+
 4. 图片车道线bbox Aspect Ratio统计
 
-![image](https://note.youdao.com/yws/api/personal/file/747D2BB1F10D4BBFAF5212A9383E85A9?method=download&shareKey=096727b916e2d44c3bd3e396e61537c8)
+![image](images/line_ratio.png)
 
 5. 车道小bbox细化统计
 
@@ -76,21 +79,21 @@ mask rcnn | ori + coco|42.3| 22.9|40.9|23.4|11.1
 
 1. 示例一
 
-![example_1](https://note.youdao.com/yws/api/personal/file/D3A9A2E3A5F44A0D8EB3A423D623F455?method=download&shareKey=218bb75f466fcdda5b2bd918b6f5065b)
+![example_1](images/res1.png)
 
 2. 示例二
 
-![example_2](https://note.youdao.com/yws/api/personal/file/84719AB412BF470792C72D38B35DF5CD?method=download&shareKey=bc98c83e7067da4bbb5a697f5c3e1c6b)
+![example_2](images/res2.png)
 
 3. 示例三
 
-![example_3](https://note.youdao.com/yws/api/personal/file/2F9030E225484EE387D03AED1B4C9684?method=download&shareKey=b6035ab12a51a7eae5050bef50972ead)
+![example_3](images/res3.png)
 
 ### 分析
 
 1、示例三对应的GT
 
-![example3_gt](https://note.youdao.com/yws/api/personal/file/A99A2A8AE21D444CB39850A490057B4C?method=download&shareKey=0f3429b7ed95130b393b04c127fa9cfb)
+![example3_gt](images/res3gt.png)
 
 
 从示例三和示例三的GT可以看出，无论是分割实例过小，还是过长，都会导致检测和分割失败。
