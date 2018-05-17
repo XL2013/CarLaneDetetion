@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=3 python carlane.py train --dataset ../data/2.7万张道路线精细标注抽取2000张 --weights coco --logs ../log

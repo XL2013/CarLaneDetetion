@@ -1,2 +1,7 @@
 data/
 code/__pycache__/
+saved_model/
+log/
+.ipynb_checkpoints/
+Readme.ipynb
+jupyter/.ipynb_checkpoints/
